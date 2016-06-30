@@ -1,0 +1,12 @@
+html, body {
+    height: 85% !important;
+    //font-family: 'SansProRl';
+}
+
+#message{
+    margin-top: 20px;
+}
+
+#message img{
+    width: 100%;
+}

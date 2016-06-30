@@ -1,0 +1,280 @@
+.input-group-md {
+    margin-bottom: 10px;
+}
+
+.tooth {
+    margin-bottom: 10px;
+}
+
+.square {
+    float: left;
+    position: relative;
+    width: 33%;
+    padding-bottom: 28%; /* = width for a 1:1 aspect ratio */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+    background-color: aliceblue;
+    border: 1px solid gray;
+}
+
+.top, .bottom {
+    margin-right: 33%;
+    margin-left: 33%;
+}
+
+.top {
+    border-bottom: none;
+    border-radius: 18px 18px 0 0;
+}
+
+.middleLeft {
+    border-right: none;
+    border-radius: 18px 0 0 18px;
+}
+
+.middleRight {
+    border-left: none;
+    border-radius: 0 18px 18px 0;
+}
+
+.bottom {
+    border-top: none;
+    border-radius: 0 0 18px 18px;
+}
+
+.col-lg-0-75, .col-sm-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+@media only screen and (min-width: 991px) {
+    .col-lg-0-75 {
+        width: 6.25%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .col-sm-1-5 {
+        width: 12.5%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .col-xs-4-a {
+        width: 25%;
+        float: left;
+    }
+}
+
+.toothImage {
+    width: 100%;
+    text-align: center;
+}
+
+.toothImage img {
+    width: 100%;
+    max-width: 64px;
+}
+
+.odontogram {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.nameTooth {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.odontogramFull {
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    margin-bottom: 10px;
+}
+
+.tooth:hover {
+    /*border: 1px solid #d4d4d4;*/
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+#contextMenu {
+    position: absolute;
+    display: none;
+}
+
+.dropdown-menu > li > a {
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #428bca;
+}
+
+.headerMenu {
+    margin: 7px;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+::-moz-selection {
+    background: white;
+}
+
+::selection {
+    background: white;
+}
+
+@-webkit-keyframes icon-beat {
+    0% {
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        transform: scale(2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes icon-beat {
+    0% {
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        transform: scale(2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+label {
+    font-weight: normal;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+label .i-odontogram {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    top: 6px;
+    font-style: normal;
+    color: #ccc;
+}
+
+label span {
+    display: inline-block;
+    line-height: 25px;
+    color: gray;
+    font-size: 11px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] + i:before,
+input[type="checkbox"] + i:before {
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+
+input[type="radio"]:checked + i,
+input[type="checkbox"]:checked + i {
+    position: relative;
+    -webkit-animation: icon-beat 0.1s ease;
+    animation: icon-beat 0.1s ease;
+}
+
+input[type="radio"]:checked + i + span,
+input[type="checkbox"]:checked + i + span {
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+input[type="radio"] + i:before {
+    content: "\f10c";
+}
+
+input[type="radio"]:checked + i:before {
+    content: "\f111";
+}
+
+input[type="radio"]:checked + i + span,
+input[type="radio"]:checked + i:before {
+    color: rgba(0, 128, 128, 0.5);
+}
+
+input[type="checkbox"] + i:before {
+    content: "\f096";
+}
+
+input[type="checkbox"]:checked + i:before {
+    content: "\f046";
+}
+
+input[type="checkbox"]:checked + i + span,
+input[type="checkbox"]:checked + i:before {
+    color: rgba(0, 128, 0, 0.5);
+}
+
+.col-lg-3.col-md-3.col-sm-3.col-xs-4 {
+    text-align: center;
+}
+
+.icon-menu {
+    width: 25px;
+}
+
+.icon-menu img {
+    width: 100%;
+    float: left;
+    display: table-cell
+}
+
+.icon-menu-txt {
+    margin-top: 2.5px;
+    margin-left: 29px;
+}
+
+.popover {
+    width: 276px;
+}
+
+.row-odontogram {
+    margin-left: 0;
+    margin-right: 0;
+}
